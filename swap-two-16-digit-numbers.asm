@@ -11,12 +11,7 @@
 lhld f100h
 xchg
 lhld f102h
-mov a, l
-sta f100h
-mov a, h
-sta f101h
-mov a, e
-sta f102h
-mov a, d
-sta f103h
+shld f100h
+xchg
+shld f102h
 hlt
